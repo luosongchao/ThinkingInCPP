@@ -1,0 +1,12 @@
+before array...
+constructing...0name[object1]
+new[]
+constructing...1name[array elem]
+constructing...2name[array elem]
+destructing...1name[array elem]
+delete[]
+destructing...0name[object1]
+caught 3
+test unexpected...
+constructing...3name[z]
+caught char z

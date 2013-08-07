@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5	//
+Base	Catchref.cpp	/^class Base {$/;"	c	file:
+Big	Basexcpt.cpp	/^		class Big : public Trouble {};$/;"	c	class:X	file:
+Bonk	Wrapped.cpp	/^  PWrap<Cat, 3> Bonk;$/;"	m	class:UseResources	file:
+Botch	Terminator.cpp	/^class Botch {$/;"	c	file:
+Cat	Rawp.cpp	/^  Cat() { out << "Cat()" << endl; }$/;"	f	class:Cat
+Cat	Rawp.cpp	/^class Cat {$/;"	c	file:
+Cat	Wrapped.cpp	/^  Cat() { out << "Cat()" << endl; }$/;"	f	class:Cat
+Cat	Wrapped.cpp	/^class Cat {$/;"	c	file:
+Derived	Catchref.cpp	/^class Derived : public Base {$/;"	c	file:
+Dog	Rawp.cpp	/^class Dog {$/;"	c	file:
+Dog	Wrapped.cpp	/^class Dog {$/;"	c	file:
+Except1	Autoexcp.cpp	/^class Except1 {};$/;"	c	file:
+Except2	Autoexcp.cpp	/^  Except2(Except1&) {}$/;"	f	class:Except2
+Except2	Autoexcp.cpp	/^class Except2 {$/;"	c	file:
+Fit	Except.cpp	/^class Fit {};$/;"	c	file:
+Fruit	Terminator.cpp	/^  class Fruit {};$/;"	c	class:Botch	file:
+Noisy	Cleanup.cpp	/^  Noisy(const char* nm="array elem") throw(int){$/;"	f	class:Noisy
+Noisy	Cleanup.cpp	/^class Noisy {$/;"	c	file:
+Og	Wrapped.cpp	/^  PWrap<Dog> Og;$/;"	m	class:UseResources	file:
+PWrap	Wrapped.cpp	/^  PWrap() {$/;"	f	class:PWrap
+PWrap	Wrapped.cpp	/^template<class T, int sz = 1> class PWrap {$/;"	c	file:
+Rainbow	Nonlocal.cpp	/^  Rainbow() { cout << "Rainbow()" << endl; }$/;"	f	class:Rainbow
+Rainbow	Nonlocal.cpp	/^class Rainbow {$/;"	c	file:
+RangeError	Wrapped.cpp	/^  class RangeError {}; \/\/ Exception class$/;"	c	class:PWrap	file:
+Small	Basexcpt.cpp	/^		class Small : public Trouble {};$/;"	c	class:X	file:
+Trouble	Basexcpt.cpp	/^		class Trouble {};$/;"	c	class:X	file:
+Up	Except.cpp	/^class Up {};$/;"	c	file:
+UseResources	Rawp.cpp	/^  UseResources(int count = 1) {$/;"	f	class:UseResources
+UseResources	Rawp.cpp	/^class UseResources {$/;"	c	file:
+UseResources	Wrapped.cpp	/^  UseResources() : Bonk(), Og() {$/;"	f	class:UseResources
+UseResources	Wrapped.cpp	/^class UseResources {$/;"	c	file:
+X	Basexcpt.cpp	/^class X {$/;"	c	file:
+bp	Rawp.cpp	/^  Cat* bp;$/;"	m	class:UseResources	file:
+f	Autoexcp.cpp	/^void f() { throw Except1(); }$/;"	f
+f	Basexcpt.cpp	/^		void f() { throw Big(); }$/;"	f	class:X
+f	Catchref.cpp	/^void f() { throw Derived(); }$/;"	f
+f	Except.cpp	/^void f(int i) throw (Up, Fit) {$/;"	f
+f	Terminator.cpp	/^  void f() {$/;"	f	class:Botch
+f	Wrapped.cpp	/^  void f() { Bonk[1].g(); }$/;"	f	class:UseResources
+g	Except.cpp	/^void g() { throw 47; } \/\/ Version 2$/;"	f
+g	Wrapped.cpp	/^  void g() {}$/;"	f	class:Cat
+i	Cleanup.cpp	/^  static int i;$/;"	m	class:Noisy	file:
+i	Cleanup.cpp	/^int Noisy::i = 0;$/;"	m	class:Noisy	file:
+kansas	Nonlocal.cpp	/^jmp_buf kansas;$/;"	v
+main	Autoexcp.cpp	/^int main() {$/;"	f
+main	Basexcpt.cpp	/^int main() {$/;"	f
+main	Catchref.cpp	/^int main() {$/;"	f
+main	Cleanup.cpp	/^int main() {$/;"	f
+main	Except.cpp	/^int main() {$/;"	f
+main	FunctionTryBlock.cpp	/^int main() try {$/;"	f
+main	Nonlocal.cpp	/^int main() {$/;"	f
+main	Rawp.cpp	/^int main() {$/;"	f
+main	Terminator.cpp	/^int main() {$/;"	f
+main	Wrapped.cpp	/^int main() {$/;"	f
+my_unexpected	Except.cpp	/^void my_unexpected() {$/;"	f
+name	Cleanup.cpp	/^  char name[sz];$/;"	m	class:Noisy	file:
+objnum	Cleanup.cpp	/^  int objnum;$/;"	m	class:Noisy	file:
+old_terminate	Terminator.cpp	/^void (*old_terminate)()$/;"	v
+op	Rawp.cpp	/^  Dog* op;$/;"	m	class:UseResources	file:
+operator []	Wrapped.cpp	/^  T& operator[](int i) throw(RangeError) {$/;"	f	class:PWrap
+operator delete	Rawp.cpp	/^  void operator delete(void* p) {$/;"	f	class:Dog
+operator delete[]	Cleanup.cpp	/^  void operator delete[](void* p) {$/;"	f	class:Noisy
+operator delete[]	Wrapped.cpp	/^  void operator delete[](void* p) {$/;"	f	class:Dog
+operator new	Rawp.cpp	/^  void* operator new(size_t sz) {$/;"	f	class:Dog
+operator new[]	Cleanup.cpp	/^  void* operator new[](size_t sz) {$/;"	f	class:Noisy
+operator new[]	Wrapped.cpp	/^  void* operator new[](size_t sz) {$/;"	f	class:Dog
+oz	Nonlocal.cpp	/^void oz() {$/;"	f
+ptr	Wrapped.cpp	/^  T* ptr;$/;"	m	class:PWrap	file:
+sz	Cleanup.cpp	/^  enum {sz = 40};$/;"	e	enum:Noisy::<anonymous>	file:
+terminator	Terminator.cpp	/^void terminator() {$/;"	f
+unexpected_rethrow	Cleanup.cpp	/^void unexpected_rethrow() {$/;"	f
+what	Catchref.cpp	/^  virtual void what() {$/;"	f	class:Base
+what	Catchref.cpp	/^  void what() {$/;"	f	class:Derived
+~Botch	Terminator.cpp	/^  ~Botch() { throw 'c'; }$/;"	f	class:Botch
+~Cat	Rawp.cpp	/^  ~Cat() { out << "~Cat()" << endl; }$/;"	f	class:Cat
+~Cat	Wrapped.cpp	/^  ~Cat() { out << "~Cat()" << endl; }$/;"	f	class:Cat
+~Noisy	Cleanup.cpp	/^  ~Noisy() {$/;"	f	class:Noisy
+~PWrap	Wrapped.cpp	/^  ~PWrap() {$/;"	f	class:PWrap
+~Rainbow	Nonlocal.cpp	/^  ~Rainbow() { cout << "~Rainbow()" << endl; }$/;"	f	class:Rainbow
+~UseResources	Rawp.cpp	/^  ~UseResources() {$/;"	f	class:UseResources
+~UseResources	Wrapped.cpp	/^  ~UseResources() {$/;"	f	class:UseResources
